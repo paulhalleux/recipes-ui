@@ -1,7 +1,3 @@
 export function App() {
-  return (
-    <>
-      Recipes
-    </>
-  )
+  return <div className="bg-red-500">Recipes</div>;
 }
