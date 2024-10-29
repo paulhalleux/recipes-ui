@@ -1,0 +1,6 @@
+package.json
+openapi.json
+api-config.yml
+tsconfig.json
+README.md
+generate.ts

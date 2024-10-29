@@ -1,0 +1,6 @@
+{
+  "name": "@recipes/ts-config",
+  "version": "1.0.0",
+  "description": "Some TypeScript configurations for recipes projects",
+  "author": "HALLEUX, Paul"
+}

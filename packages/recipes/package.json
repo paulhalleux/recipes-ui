@@ -1,0 +1,23 @@
+{
+  "name": "@recipes/app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@recipes/api-client": "^1.0.0",
+    "@recipes/vite-config": "^1.0.0",
+    "@recipes/eslint-config": "^1.0.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1"
+  }
+}
