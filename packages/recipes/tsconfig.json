@@ -1,3 +1,4 @@
 {
-  "extends": "@recipes/ts-config/app/tsconfig.json"
+  "extends": "@recipes/ts-config/tsconfig.app.json",
+  "include": ["src"]
 }

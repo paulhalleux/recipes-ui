@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 export default tseslint.config(
   {ignores: ['dist']},
@@ -17,6 +18,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      "simple-import-sort": simpleImportSort,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -25,6 +27,22 @@ export default tseslint.config(
         {allowConstantExport: true},
       ],
       "prettier/prettier": "warn",
+      "simple-import-sort/imports": [
+        "error",
+        {
+          groups: [
+            [
+              "^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)",
+            ],
+            ["^react", "^@?\\w"],
+            ["^(@|@company|@ui|components|utils|config|vendored-lib)(/.*|$)"],
+            ["^\\u0000"],
+            ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+            ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+            ["^.+\\.s?css$"],
+          ],
+        },
+      ],
     },
   },
 )

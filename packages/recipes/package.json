@@ -10,16 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lucide/lab": "^0.1.2",
+    "autoprefixer": "^10.4.20",
+    "lucide-react": "^0.454.0",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.14",
-    "postcss": "^8.4.47",
-    "autoprefixer": "^10.4.20"
+    "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
     "@recipes/api-client": "^1.0.0",
     "@recipes/eslint-config": "^1.0.0",
     "@recipes/tailwind-config": "^1.0.0",
+    "@recipes/ui": "^1.0.0",
     "@recipes/vite-config": "^1.0.0",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1"
